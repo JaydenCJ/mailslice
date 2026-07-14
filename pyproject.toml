@@ -9,7 +9,7 @@ description = "Stream-split giant Google Takeout mbox files into maildir or EML 
 readme = "README.md"
 requires-python = ">=3.9"
 license = { text = "MIT" }
-authors = [{ name = "JaydenCJ" }]
+authors = [{ name = "JaydenCJ", email = "aisingioro.kiyon@gmail.com" }]
 keywords = ["mbox", "maildir", "gmail", "takeout", "email", "eml", "migration"]
 classifiers = [
     "Development Status :: 3 - Alpha",
