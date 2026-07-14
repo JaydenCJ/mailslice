@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="664" viewBox="0 0 920 664" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="14">
+  <!-- Terminal transcript of a real run against the deterministic sample
+       mbox from examples/make_sample_mbox.py. Text content is copied
+       verbatim from an actual execution; "…" marks elided table rows at
+       the positions where rows were elided. -->
+  <rect width="920" height="664" rx="10" fill="#0d1117"/>
+  <rect width="920" height="34" rx="10" fill="#161b22"/>
+  <rect y="20" width="920" height="14" fill="#161b22"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="460" y="22" fill="#8b949e" text-anchor="middle" font-size="12">mailslice — slice a Takeout mbox by label and year</text>
+  <g fill="#c9d1d9">
+    <text x="24" y="62"><tspan fill="#7ee787">$</tspan> mailslice scan takeout.mbox</text>
+    <text x="24" y="86">messages: 8   size: 1.9 KiB   span: <tspan fill="#79c0ff">2020-2021</tspan></text>
+    <text x="24" y="110" fill="#8b949e">label/year             messages  size</text>
+    <text x="24" y="134">Inbox/2020                    2  562 B</text>
+    <text x="24" y="158" fill="#8b949e">…</text>
+    <text x="24" y="182">Receipts, 2020/2020           1  236 B</text>
+    <text x="24" y="206" fill="#8b949e">…</text>
+    <text x="24" y="230">Work/Projects/Q1/2021         1  246 B</text>
+    <text x="24" y="254">請求書/2020                      1  261 B</text>
+    <text x="24" y="278">total: 8 messages, 1.9 KiB, <tspan fill="#7ee787">0 malformed</tspan>, 0 skipped</text>
+    <text x="24" y="318"><tspan fill="#7ee787">$</tspan> mailslice split takeout.mbox -o mail --exclude-label Spam</text>
+    <text x="24" y="342" fill="#8b949e">label/year             messages  size</text>
+    <text x="24" y="366">Inbox/2021                    1  180 B</text>
+    <text x="24" y="390" fill="#8b949e">…</text>
+    <text x="24" y="414">Work/Projects/Q1/2021         1  248 B</text>
+    <text x="24" y="438">請求書/2020                      1  262 B</text>
+    <text x="24" y="462">total: 8 messages, 1.9 KiB, 0 malformed, <tspan fill="#d29922">1 skipped</tspan></text>
+    <text x="24" y="486">wrote maildir folders under <tspan fill="#79c0ff">mail/</tspan></text>
+    <text x="24" y="526"><tspan fill="#7ee787">$</tspan> find mail -type f | sort | tail -3</text>
+    <text x="24" y="550">mail/Work/Projects/2020/cur/1577955600.M000001.mailslice:2,<tspan fill="#79c0ff">S</tspan></text>
+    <text x="24" y="574">mail/Work/Projects/Q1/2021/cur/1614589200.M000001.mailslice:2,<tspan fill="#79c0ff">FS</tspan></text>
+    <text x="24" y="598">mail/請求書/2020/cur/1593595800.M000001.mailslice:2,</text>
+    <text x="24" y="634" fill="#8b949e">constant memory · zero dependencies · nothing leaves your machine</text>
+  </g>
+</svg>
